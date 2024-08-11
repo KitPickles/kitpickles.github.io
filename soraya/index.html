@@ -186,9 +186,9 @@
 										<td>!deaths</td>
 									</tr>
 									<tr>
-										<td>!deathsall</td>
-										<td>Shows the number of times we have tracked Soraya's deaths across all games, because we're mean like that.</td>
-										<td>!deathsall</td>
+										<td>!checkvip</td>
+										<td>Checks when a chatter's temporary VIP status expires. If a moderator or permanent VIP uses this, it lists all current temporary VIPs.</td>
+										<td>!checkvip</td>
 									</tr>
 									<tr>
 										<td>!chosen</td>
@@ -312,29 +312,46 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>!deathcategory</td>
-										<td>Adds or Removes a game from the death catgegory database.</td>
-										<td>!deathcategory add Apex Legends or !deathcategory del Apex Legends</td>
-									</tr>
-									<tr>
-										<td>!death-</td>
+										<td>!death-, !deathsub</td>
 										<td>Removes a death from the current game if one was added by accident.</td>
 										<td>!death-</td>
 									</tr>
 									<tr>
-										<td>!death+</td>
+										<td>!death+, !deathadd</td>
 										<td>Adds a death to the current game. This has a 10 second cooldown to avoid multiple deaths being added.</td>
 										<td>!death+</td>
 									</tr>
 									<tr>
-										<td>!deathreset</td>
+										<td>!resetdeaths, !resetdeath, !deathreset, !deathsreset</td>
 										<td>Resets the total deaths for a game. Handy for something like Minecraft and starting new worlds.</td>
 										<td>!deathreset</td>
 									</tr>
+								</tbody>
+							</table>
+							<table class="table table-striped table-bordered table-hover">
+								<caption>Temporary VIP Commands</caption>
+								<thead class="thead-dark">
 									<tr>
-										<td>!deathset</td>
-										<td>Sets the number of deaths for a game. Useful if we forgot to track a couple or if a category has to be reset.</td>
-										<td>!deathset 15</td>
+										<th scope="col">Command</th>
+										<th scope="col">Description</th>
+										<th scope="col">Example</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>!addvip</td>
+										<td>Adds VIP time to the specified user. If [Time] has been left blank, it will pick the default time that is set in the action.</td>
+										<td>!addvip Razinbazin 1mo</td>
+									</tr>
+									<tr>
+										<td>!removevip</td>
+										<td>Removes VIP time. If the removed time exceeds the time the user had left, it will un-vip them. So to completely remove someone from being a temporary VIP, you can just remove 100 years.</td>
+										<td>!removevip saintclear 2w</td>
+									</tr>
+									<tr>
+										<td>!refreshvip</td>
+										<td>A manual refresh and checks for expired VIPs. If any are expired, they will be removed.</td>
+										<td>!refreshvip</td>
 									</tr>
 								</tbody>
 							</table>
